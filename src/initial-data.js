@@ -1,4 +1,4 @@
-const data = {
+const initialData = {
   tasks: {
     'task-1': { id: 'task-1', content: 'Take out the garbage' },
     'task-2': { id: 'task-2', content: 'Watch my favorite show' },
@@ -13,11 +13,12 @@ const data = {
     },
     'column-2': {
       id: 'column-2',
-      title: 'Done',
+      title: 'In progress',
       taskIds: [],
     },
   },
-  columnOrder: ['column-1'],
+  // Facilitate reordering of the columns
+  columnOrder: ['column-1', 'column-2'],
 };
 
-export default data;
+export default initialData;
